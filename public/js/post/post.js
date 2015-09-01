@@ -15,7 +15,12 @@ app.config(function($stateProvider) {
 });
 
 // add necessary dependencies 
-app.controller('PostCtrl', function() {
+app.controller('PostCtrl', function(Post, $stateParams) {
+
+
+	console.log($stateParams);
+	//$stateParams.postId;
+
 
 
 	/* 1. FIND POST
